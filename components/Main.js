@@ -9,3 +9,5 @@ export default () => html`
   ${views["Order"]()}
 `;
 
+
+export default (state) => html` ${views[state.view](state)} `;
