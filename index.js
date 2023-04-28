@@ -12,12 +12,11 @@ function render(state = store.Home) {
     ${Main(state)}
     ${Footer()}
   `;
-}
+
 afterRender(state);
 
 router.updatePageLinks();
-render(store.Bio);
-
+}
 
 function afterRender(state) {
 //add menu toggle to bars icon in nav bar
